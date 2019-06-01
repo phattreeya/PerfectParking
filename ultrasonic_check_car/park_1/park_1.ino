@@ -3,8 +3,8 @@
 #include <Ultrasonic.h> 
 #define WIFI_SSID "Room334"
 #define WIFI_PASSWORD "334334334" 
-#define FIREBASE_HOST "theeraphat-a723c.firebaseio.com" 
-#define FIREBASE_AUTH "IK9SGS2odR4rtsuxOGY14eVSkqQ11v8AK6VW6Cos"
+#define FIREBASE_HOST "......................................" 
+#define FIREBASE_AUTH "......................................"
 unsigned long ShowTime;
 Ultrasonic ultrasonic(D0,D1); 
 int distance,count=0; 
