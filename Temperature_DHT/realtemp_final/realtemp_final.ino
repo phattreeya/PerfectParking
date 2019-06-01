@@ -57,9 +57,11 @@ void loop() {
    float h = dht.readHumidity();
    float t = dht.readTemperature();
 
+   int TempCommandAlert = Firebase.getInt("TempCommandAlert");
+
 // check if returns are valid, if they are NaN (not a number) then something went wrong!
   Firebase.setFloat("temperature", t);
-if(t > 25) {
+if(t > TempCommandAlert) {
   Firebase.setString("status", Status[0]);
   tone(D4, 1000);
 
